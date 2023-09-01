@@ -1,0 +1,47 @@
+<script>
+    /*
+    Crear una cadena que sea la respuesta a una pregunta. 
+    
+        Si la respuesta es SI, la salida es: "Nos han respondido SI".
+        Si la respuesta es NO, la salida es: "Nos han respondido NO"
+        Si la respuesta es diferente a SI o NO, la salida es: "No hemos ententendido la respuesta"
+    */
+
+   var mensaje;
+
+   function respuesta(rta){
+    if (rta == "SI"){
+        mensaje = "Nos han respondido SI";
+    } else if (rta == "NO"){
+        mensaje = "Nos han respondido NO";
+    } else {
+        mensaje = "No hemos ententendido la respuesta";
+    }
+
+    return mensaje;
+   }
+
+   console.log(respuesta("SI"));
+   console.log(respuesta("NO"));
+   console.log(respuesta("NO SE"));
+
+   var msg;
+   function answer(ans){
+    switch (ans){
+        case "YES":
+            msg = "The anwers is YES";
+            break;
+        case "NO":
+            msg = "The answer is NO";
+            break;
+        default:
+            msg = "I cannot understand the answer";
+            break;
+    }
+    return msg;
+   }
+
+   console.log(answer("YES"));
+   console.log(answer("NO"));
+   console.log(answer("I DONT KNOW"));
+</script>
